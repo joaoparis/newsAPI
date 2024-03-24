@@ -27,7 +27,7 @@ public class NewsController {
     public ResponseEntity<String> requestMethodName(@RequestBody News body) {
         System.out.println("New news received...");
         var response = newsService.handleNews(body);
-        System.out.println("News was handled fine!");
+        System.out.println("News was handled!");
         return response;
     }
 
